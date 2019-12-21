@@ -63,9 +63,9 @@
 		return
 
 	if(!powered())
-		scrubber_icon += "off_new"
+		scrubber_icon += "new_off"
 	else
-		scrubber_icon += "[use_power ? "[scrubbing ? "on_new" : "in_new"]" : "off_new"]"
+		scrubber_icon += "[use_power ? "[scrubbing ? "new_on" : "new_in"]" : "new_off"]"
 
 	overlays += icon_manager.get_atmos_icon("device", , , scrubber_icon)
 
