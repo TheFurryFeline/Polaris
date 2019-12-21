@@ -124,14 +124,14 @@
 		return
 
 	if(!T.is_plating() && node && node.level == 1 && istype(node, /obj/machinery/atmospherics/pipe))
-		vent_icon += "h"
+		vent_icon += "h_new"
 
 	if(welded)
-		vent_icon += "weld"
+		vent_icon += "weld_new"
 	else if(!use_power || !node || (stat & (NOPOWER|BROKEN)))
-		vent_icon += "off"
+		vent_icon += "off_new"
 	else
-		vent_icon += "[pump_direction ? "out" : "in"]"
+		vent_icon += "[pump_direction ? "out_new" : "in_new"]"
 
 	overlays += icon_manager.get_atmos_icon("device", , , vent_icon)
 
